@@ -1,36 +1,26 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 
-function App() {
-  return (
-    <div className="App">
+const App = () => (
+  <div className={styles.App}>
 
-      <header className="Header">
-        Header
-      </header>
+    <header className={styles.Header}>
+      Header
+    </header>
 
-      <nav className="Nav">
-        Nav
-      </nav>
+    <main className={styles.Main}>
+      <section className={styles.Main__Section}>
+        Section 1
+      </section>
+      <section className={styles.Main__Section}>
+        Section 2
+      </section>
+      <section className={styles.Main__Section}>
+        Section 3
+      </section>
+    </main>
 
-      <main className="Main">
-        <section className="Main__Section">
-          Section 1
-        </section>
-        <section className="Main__Section">
-          Section 2
-        </section>
-        <section className="Main__Section">
-          Section 3
-        </section>
-      </main>
-
-      <footer className="Footer">
-        Footer  
-      </footer>
-
-    </div>
-  );
-}
+  </div>
+);
 
 export default App;

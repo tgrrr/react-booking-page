@@ -1,0 +1,23 @@
+@value colors: "../../config/styles.css";
+@value white, black, textSize from colors;
+
+.App {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: textSize;
+  height: 100%;
+  padding: 0 10%;
+  text-align: left;
+}
+
+.Header {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 20vh;
+  width: 100%;
+}
