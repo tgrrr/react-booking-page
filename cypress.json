@@ -1,0 +1,13 @@
+{
+    "baseUrl": "http://localhost:3000",
+    "env": {
+        "REACT_APP_API_BASE_URL": "https://blooming-fortress-38880.herokuapp.com/",
+        "cypress-react-unit-test": {
+            "react": "./node_modules/react/umd/react.development.js",
+            "react-dom": "./node_modules/react-dom/umd/react-dom.development.js"
+        }
+    },
+    "ignoreTestFiles": "*.js",
+    "theme": "dark",
+    "projectId": "ms8s77"
+}
