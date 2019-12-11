@@ -1,5 +1,10 @@
 # React Booking Page
 
+## TODO:
+
+- [ ] Currency and number format: eg https://www.npmjs.com/package/react-number-format
+
+
 ## Setup - WIP
 
 [**Origin story**](http://github.com/tgrrr/react-booking-page)
