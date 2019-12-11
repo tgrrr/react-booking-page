@@ -1,24 +1,47 @@
 # React Booking Page
 
+
+
 ## TODO:
 
 - [ ] Currency and number format: eg https://www.npmjs.com/package/react-number-format
 
-
-## Setup - WIP
-
-[**Origin story**](http://github.com/tgrrr/react-booking-page)
+## [**Origin story**](http://github.com/tgrrr/react-booking-page)
 
 ```bash
 git clone git@github.com:tgrrr/react-booking-page.git
 ```
 
-## Scripts
+## How to build
+
+```bash
+docker build . -t tgrrr/cra-docker
+```
+
+### How to run with Docker
+
+- Pull `create-react-app` from `docker`
+
+```bash
+docker pull tgrrr/cra-docker
+docker run -p 8080:80 tgrrr/cra-docker
+```
+
+**Note:** including `-p 8080:80` lets us use `localhost:8080`, rather than assigning a random port
+
+### How to run with `npm` or `yarn`
 
 ```bash
 npm install
 npm start
 ```
+
+```bash
+yarn start
+```
+
+---
+
 
 ## Task Scenario
 
