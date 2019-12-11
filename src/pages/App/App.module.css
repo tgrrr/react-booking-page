@@ -3,7 +3,7 @@
 
 .App {
   align-items: center;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   flex-direction: column;
   font-family: Roboto, Helvetica, sans-serif;
