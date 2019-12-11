@@ -9,10 +9,10 @@ Given(/I visit the homepage$/, () => {
 When(/^I search for a Booking$/, () => cy.log('I search for a Booking'));
 
 Then(/^It generates a fixture file stubbed API$/, () => {
-    cy.log(`I search for a Booking ${Cypress.env('REACT_APP_URL')}`);
+    cy.log(`I search for a Booking ${Cypress.env('REACT_APP_API_BASE_URL')}`);
     cy.request({
         method: 'GET',
-        url: `${Cypress.env('REACT_APP_URL')}bookings`,
+        url: `${Cypress.env('REACT_APP_API_BASE_URL')}bookings`,
     })
         .then((response) => {
             cy.writeFile(
