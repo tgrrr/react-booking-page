@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.0",
     "bootstrap": "^4.4.1",
     "lodash": "^4.17.15",
@@ -14,11 +11,24 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
   },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/cypress": "^5.0.2",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "uuid": "^3.3.3"
+  },
   "scripts": {
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "deploy:test": "yarn build && netlify deploy --prod",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "watch": "react-scripts start",
+    "test": "npm run cypress:run",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"

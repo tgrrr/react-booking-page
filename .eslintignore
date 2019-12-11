@@ -1,0 +1,9 @@
+**/node_modules/*
+**/vendor/*
+**/*.min.js
+**/coverage/*
+**/build/*
+**/deprecated/*
+/src/backup.js
+**/serviceWorker.js
+**/registerServiceWorker.js
