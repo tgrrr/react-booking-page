@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useFetchBookings, useFetchProducts } from '../../hooks/useFetch';
+import React from 'react';
+import { useFetchBookings } from '../../hooks/useFetch';
 import BookingResults from './BookingResults';
 
 const BookingResultsContainer = () => {

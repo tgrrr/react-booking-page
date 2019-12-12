@@ -1,10 +1,8 @@
 # React Booking Page
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/834c41c1-c2c5-4c77-9e17-f2b1394279f3/deploy-status)](https://app.netlify.com/sites/reactbookingpage/deploys)
 
-
-## TODO:
-
-- [ ] Currency and number format: eg https://www.npmjs.com/package/react-number-format
+Live demo: [https://reactbookingpage.tgrrr.com/](https://reactbookingpage.tgrrr.com/)
 
 ## [**Origin story**](http://github.com/tgrrr/react-booking-page)
 
@@ -42,17 +40,25 @@ yarn start
 
 ---
 
+<details>
+<summary>TODO</summary>
+<br>
 
-## Task Scenario
+- [ ] loading skeletons
+- [ ] load table in two parts: one after initial booking loads, then again after product calls
+- [ ] Currency and number format: eg https://www.npmjs.com/package/react-number-format
+- [ ] Move these todo's into BDD scenarios
 
-![Bookings Table Design Mockup](https://user-images.githubusercontent.com/908155/43172577-41114f3c-8ff3-11e8-849a-18c6cbb8f1f0.png)
+### Task Scenario
 
-- [ ] Using the API, which returns booking data
-  - [ ] renders the bookings
+- [ ] ![Bookings Table Design Mockup](https://user-images.githubusercontent.com/908155/43172577-41114f3c-8ff3-11e8-849a-18c6cbb8f1f0.png)
+
+- [x] Using the API, which returns booking data
+  - [x] renders the bookings
   - [ ] grouped by seller
-  - [ ] as human friendly tables
+  - [x] as human friendly tables
 
-### Requirements
+#### Requirements
 
 - [x] Design must align closely with the high-fidelity mock-up above (base font is 12px Roboto Light).
 - [ ] Bookings should be grouped by seller, displaying the seller's name, with each seller having their own table.
@@ -62,16 +68,21 @@ yarn start
 
 The table should have the following columns and formats:
 
-- [ ] `ID` - first five characters of **booking id**, all upper-case e.g. 'c703e947-f39a-4143-8fb4-5854fa4412f3' as `'C703E'`
-- [ ] `Product Name` - as is from the **product** API resource.
-- [ ] `Quantity` - a *formatted string* representation of the **booking quantity** number e.g. 150000 as `'150,000'`
-- [ ] `Rate` - a *formatted string*, currency representation of the **product rate** number e.g. 3050 as `'$30.50'`
-- [ ] `Cost` - a *formatted string*, currency representation of the **booking cost**, which is a calculation of **product rate**, *charged per thousand*, multiplied by **booking quantity** e.g. a rate of 3500, and a quantity of 200000 as `'$7,000'`
-- [ ] <u>Optionally</u> add Start/End Date columns.
+- [x] `ID` - first five characters of **booking id**, all upper-case e.g. 'c703e947-f39a-4143-8fb4-5854fa4412f3' as `'C703E'`
+- [x] `Product Name` - as is from the **product** API resource.
+- [x] `Quantity` - a *formatted string* representation of the **booking quantity** number e.g. 150000 as `'150,000'`
+- [x] `Rate` - a *formatted string*, currency representation of the **product rate** number e.g. 3050 as `'$30.50'`
+- [x] `Cost` - a *formatted string*, currency representation of the **booking cost**, which is a calculation of **product rate**, *charged per thousand*, multiplied by **booking quantity** e.g. a rate of 3500, and a quantity of 200000 as `'$7,000'`
+- [x] <u>Optionally</u> add Start/End Date columns.
+</details>
+
+<details>
+<summary>API details:</summary>
+<br>
 
 ### API
 
-- [ ] Make `get` requests to [`https://blooming-fortress-38880.herokuapp.com/`](https://blooming-fortress-38880.herokuapp.com/).
+- [x] Make `get` requests to [`https://blooming-fortress-38880.herokuapp.com/`](https://blooming-fortress-38880.herokuapp.com/).
 
 The API is returned as a JSON object for each resource like so:
 
@@ -135,6 +146,12 @@ Returns a single seller object by id
 }
 ```
 
+</details>
+
+
+<details>
+<summary>Stack</summary>
+<br>
 ## State:
 
 * `React` with context API and/or `Redux`
@@ -153,3 +170,6 @@ Returns a single seller object by id
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Notes: [Create React App](./docs/CREATE-REACT-APP.md)
+
+</details>
+
